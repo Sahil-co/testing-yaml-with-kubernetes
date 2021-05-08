@@ -1,0 +1,7 @@
+FROM openjdk:11
+
+ADD target/EurekaDiscoveryServer-0.0.1-SNAPSHOT.war EurekaDiscoveryServer-0.0.1-SNAPSHOT.war
+
+EXPOSE 8085
+
+ENTRYPOINT ["java","-jar","eurekaserver.jar"]
